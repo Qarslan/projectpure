@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculatorSlan</title>
+    <style type="text/css" media="all">
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        background-color: whitesmoke;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+      
+      .column {
+        background-color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+      
+      button:hover {
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <table border="0">
+      <tbody>
+        <tr>
+          <td colspan="2"
+            style="
+              text-align: center;
+              padding: 20px;
+            ">ArslanSlan</td>
+        </tr>
+        <tr>
+          <td colspan="2"
+          style="
+            text-align:center;
+          "><button type="submit" onclick="attention()" class="button"
+            style="
+              padding: 5px 10px;
+              
+              background-color: green;
+              color: white;
+            ">Fullstack Developer</button></td>
+        </tr>
+        <tr>
+          <td colspan="2" 
+          style="
+            text-align:center;
+            padding: 10px 0px;
+          ">My Skill</td>
+        </tr>
+        <tr>
+          <td
+            style="
+              padding: 5px 10px;
+            ">Frontend</td>
+          <td
+            style="
+              padding: 5px 10px;
+            ">Backend</td>
+        </tr> 
+      </tbody>
+    </table>
+      </div>
+    </div>
+    
+    <div class="content">
+      <nav>
+        <img src="" alt="" />
+      </nav>
+    </div>
+
+    
+    
+    <script type="text/javascript" charset="utf-8">
+      
+      function attention() {
+        alert("Keep Spirit, bro!!!")
+      }
+      
+      
+      //System Plus Number =====================
+      function tambah(a, b) {
+        return a + b;
+      }
+      
+      //System Minus Number ====================
+      function kurang(a, b) {
+        return a - b;
+      }
+      
+      let jumlahPlus = tambah(2, 3);
+      let jumlahMinus = kurang(5, 3);
+      
+      console.log(jumlahPlus)
+      console.log(jumlahMinus)
+    </script>
+  </body>
+</html>
