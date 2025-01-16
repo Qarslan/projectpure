@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHA-256 Lookup</title>
+</head>
+<body>
+    <h1>SHA-256 Lookup</h1>
+    <p>Masukkan hash SHA-256 untuk mencari teks asli:</p>
+    <input type="text" id="inputHash" placeholder="Masukkan hash SHA-256">
+    <br><br>
+    <button onclick="lookupHash()">Cari Teks Asli</button>
+    <h3>Hasil:</h3>
+    <p id="outputText"></p>
+
+    <script>
+        // Database sederhana: pasangan hash dan teks asli
+        const hashDatabase = {
+            "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824": "hello",
+            "b94d27b9934d3e08a52e52d7da7dabfa4eef8ddf67e6ecf0d3c99e8f1e62a414": "hello world",
+            "5d41402abc4b2a76b9719d911017c592": "h"
+        };
+
+        function lookupHash() {
+            const inputHash = document.getElementById("inputHash").value;
+            const result = hashDatabase[inputHash] || "Teks asli tidak ditemukan dalam database.";
+            document.getElementById("outputText").innerText = result;
+        }
+    </script>
+</body>
+</html>
